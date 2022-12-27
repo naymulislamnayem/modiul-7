@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+}
+.box1{
+    background-color: blueviolet;
+    border: 2px;
+    width: 400px;
+    height: 200px;
+    border-radius: 3px;
+    overflow: scroll;
+}
+.box2{
+    background-color: blueviolet;
+    border: 2px;
+    width: 400px;
+    height: 200px;
+    border-radius: 3px;
+    overflow: scroll;
+}
+.outer{
+    width: 75px;
+    height: 75px;
+    background-color: gold;
+    border: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+.inner{
+    width: 75px;
+    height: 75px;
+    background-color: rosybrown;
+    border: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transform: scale(0.75);
+}
+
+.box4{
+    height: 200px;
+    width: 200px;
+    background-color: thistle;
+    transition: background-color 2s ease 2s;
+    margin-bottom: 50px;
+}
+.box4:hover{
+    background-color: rgb(250, 10, 142);
+}
+.ball{
+    height: 45px;
+    width: 45px;
+    background-color: red;
+    border: 20px;
+    border-radius: 25px;
+    position: relative;
+    left: 310px;
+    bottom: 50px;
+    transition: transform 0.75s ease-in 0.5s;
+
+}
+.feild:hover .ball{
+    transform: translate(1000px, -200px);
+}
+.bat{
+    transition: transform 0.5s ease;
+}
+.bat:hover{
+    transform: rotate(-60deg);
+    transform-origin: 100% 0%;
+}
+.motion1{
+    background-color: aquamarine;
+    height: 400px;
+}
+
+.motion2{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    bottom: 400px;
+    
+}
+@keyframes jikjak {
+    0% {
+        left: 0;
+        bottom: 400px;
+    }
+    25%{
+        left: 300;
+        bottom: 50px;
+        background-color: red;
+    }
+    50%{
+        left: 600px;
+        bottom: 400px;
+        background-color: blue;
+    }
+    75%{
+        left: 900px;
+        bottom: 50px;
+        background-color: darkorange;
+    }
+    100% {
+        left: 1200px;
+        bottom: 400px;
+        background-color: pink;
+    }
+}
+.motion:hover .motion2{
+    animation: jikjak 5s ease-in 1s infinite alternate;
+}
+.flex{
+    height: 150px;
+    width: 200px;
+    background-color: darkgray;
+    border: 5px solid red;
+    border-radius: 50px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.grid{
+    border: 3px solid yellowgreen;
+    text-align: center;
+}
+.calander{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
